@@ -1,7 +1,7 @@
 {
   "name": "@tubitid/badge-scheme",
   "version": "0.0.1",
-  "description": "Badge protobuf and mongoose schemes.",
+  "description": "Badge protobuf schemes.",
   "main": "lib/proto/badge.js",
   "types": "lib/proto/badge.d.ts",
   "scripts": {
@@ -18,7 +18,6 @@
     "tubitid",
     "badge",
     "protobuf",
-    "mongoose",
     "scheme"
   ],
   "author": "Yengas",
