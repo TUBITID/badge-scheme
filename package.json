@@ -1,0 +1,30 @@
+{
+  "name": "@tubitid/badge-scheme",
+  "version": "1.0.0",
+  "description": "Badge protobuf and mongoose schemes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TUBITID/badge-scheme.git"
+  },
+  "keywords": [
+    "tubitid",
+    "badge",
+    "protobuf",
+    "mongoose",
+    "scheme"
+  ],
+  "author": "Yengas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TUBITID/badge-scheme/issues"
+  },
+  "homepage": "https://github.com/TUBITID/badge-scheme#readme",
+  "dependencies": {},
+  "optionalDependencies": {
+    "google-protobuf": "^3.5.0"
+  }
+}
