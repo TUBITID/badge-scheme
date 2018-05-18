@@ -1,6 +1,6 @@
 {
   "name": "@tubitid/badge-scheme",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Badge protobuf and mongoose schemes.",
   "main": "lib/proto/badge.js",
   "scripts": {
