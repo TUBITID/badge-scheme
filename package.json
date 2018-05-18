@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Badge protobuf and mongoose schemes.",
   "main": "lib/proto/badge.js",
+  "types": "lib/proto/badge.d.ts",
   "scripts": {
     "protoc": "./protoc-ts-generate.sh ./lib/proto",
     "build": "npm run protoc",
