@@ -1,5 +1,4 @@
 syntax = "proto3";
-package tubitid.badge;
 
 enum Department {
     NONE = 0;
@@ -28,9 +27,4 @@ message Badge {
         StudentMetaData student = 4;
         FacebookMetaData facebook = 5;
     }
-}
-
-message SignedBadge {
-    bytes signature = 1;
-    Badge badge = 2;
 }
