@@ -5,8 +5,10 @@
   "main": "lib/proto/badge.js",
   "types": "lib/proto/badge.d.ts",
   "scripts": {
-    "protoc": "./protoc-ts-generate.sh ./lib/proto",
-    "build": "npm run protoc",
+    "buildJSStatic": "pbjs -t static-module -w commonjs -o ./lib/proto/badge.js ./badge.proto",
+    "buildTSStatic": "pbts -o ./lib/proto/badge.d.ts ./lib/proto/badge.js",
+    "buildStatic": "npm run buildJSStatic && npm run buildTSStatic",
+    "build": "mkdir -p ./lib/proto && npm run buildStatic",
     "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,12 +29,8 @@
   },
   "homepage": "https://github.com/TUBITID/badge-scheme#readme",
   "dependencies": {},
-  "optionalDependencies": {
-    "google-protobuf": "^3.5.0"
-  },
+  "optionalDependencies": {},
   "devDependencies": {
-    "@types/google-protobuf": "^3.2.7",
-    "ts-protoc-gen": "^0.6.0",
-    "typescript": "^2.8.3"
+    "protobufjs": "^6.8.6"
   }
 }
